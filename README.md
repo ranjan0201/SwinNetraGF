@@ -30,15 +30,24 @@ Retinal diseases, particularly **Diabetic Retinopathy (DR)** and **Glaucoma**, a
 
 ---
 
-# 🏗 Proposed Framework
+# 🏗️ Proposed Framework
 
-<p align="center">
-<img src="figures/retina_R.png" width="1000">
-</p>
+<div align="center">
 
-**Figure:** Overview of the proposed SwinNetraGF framework. Hierarchical features extracted by Swin Transformer V2 are spatially aligned and adaptively fused through the proposed Gated Attention Fusion module before classification.
+<img src="figures/retina_R.png" width="95%" alt="SwinNetraGF"/>
 
----
+<br>
+
+<sub>
+<b>Figure 1.</b>
+Overview of the proposed <b>SwinNetraGF</b>.
+The framework extracts hierarchical retinal representations using
+<b>Swin Transformer V2</b>, aligns shallow features through a learnable
+projection module, and adaptively integrates them using the proposed
+<b>Gated Attention Fusion (GAF)</b> mechanism before classification.
+</sub>
+
+</div>
 
 # 📂 Dataset
 

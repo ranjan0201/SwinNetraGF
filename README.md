@@ -6,7 +6,7 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)
 ![Conference](https://img.shields.io/badge/IEEE-SPCOM%202026-orange.svg)
 
-**Official PyTorch implementation of SwinNetraGF**
+**PyTorch implementation of SwinNetraGF**
 
 *A Gated Attention Fusion Transformer for Automated Retinal Disease Classification*
 

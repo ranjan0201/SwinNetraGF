@@ -42,7 +42,7 @@ Retinal diseases, particularly **Diabetic Retinopathy (DR)** and **Glaucoma**, a
 
 # 📂 Dataset
 
-### Eye Disease Image Dataset
+### Eye Disease Image Dataset (https://data.mendeley.com/datasets/s9bfhswzjb/1)
 
 | Property | Value |
 |-----------|------:|

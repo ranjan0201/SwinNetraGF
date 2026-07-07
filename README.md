@@ -85,29 +85,6 @@ Healthy | Diabetic Retinopathy | Glaucoma
 
 ---
 
-# 🔥 Adaptive Gated Attention Fusion
-
-The proposed fusion module computes
-
-\[
-G=\sigma(\mathrm{LN}(T_{deep}W_g))
-\]
-
-and fuses hierarchical features as
-
-\[
-F_{fused}=T_{deep}+G\odot(\hat{T}_{shallow}W_f)
-\]
-
-where
-
-- \(T_{deep}\) denotes deep semantic features
-- \(\hat T_{shallow}\) denotes aligned shallow features
-- \(G\) is the adaptive gating map
-- \(F_{fused}\) is the final fused representation
-
----
-
 # ⚙️ Training Configuration
 
 | Parameter | Value |

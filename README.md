@@ -32,22 +32,40 @@ Retinal diseases, particularly **Diabetic Retinopathy (DR)** and **Glaucoma**, a
 
 # 🏗️ Proposed Framework
 
-<div align="center">
+**SwinNetraGF** is an end-to-end transformer-based framework for automated retinal disease classification. The model combines hierarchical feature extraction with adaptive feature fusion to effectively capture both fine-grained retinal structures and global contextual information.
 
-<img src="figures/retina_R.png" width="95%" alt="SwinNetraGF"/>
+### Framework Pipeline
 
-<br>
+```text
+Fundus Image
+      │
+      ▼
+Image Preprocessing
+      │
+      ▼
+Swin Transformer V2
+(Hierarchical Feature Extraction)
+      │
+      ▼
+Spatial Alignment Module
+      │
+      ▼
+Adaptive Gated Attention Fusion
+      │
+      ▼
+Classification Head
+(GAP → LayerNorm → Dropout → Linear)
+      │
+      ▼
+Healthy | Diabetic Retinopathy | Glaucoma
+```
 
-<sub>
-<b>Figure 1.</b>
-Overview of the proposed <b>SwinNetraGF</b>.
-The framework extracts hierarchical retinal representations using
-<b>Swin Transformer V2</b>, aligns shallow features through a learnable
-projection module, and adaptively integrates them using the proposed
-<b>Gated Attention Fusion (GAF)</b> mechanism before classification.
-</sub>
+### Key Components
 
-</div>
+- **Hierarchical Feature Extraction:** Swin Transformer V2 captures multi-scale local and global retinal representations.
+- **Spatial Alignment:** Projects shallow and deep features into a common embedding space for effective feature interaction.
+- **Adaptive Gated Attention Fusion:** Dynamically selects informative shallow features while preserving deep semantic representations.
+- **Classification Head:** Global Average Pooling (GAP), Layer Normalization, Dropout, and a fully connected layer generate the final disease prediction.
 
 # 📂 Dataset
 
@@ -64,34 +82,6 @@ projection module, and adaptively integrates them using the proposed
 | Training | 70% |
 | Validation | 15% |
 | Testing | 15% |
-
----
-
-# 🧠 Methodology
-
-The proposed framework consists of four major components:
-
-```
-Fundus Image
-      │
-      ▼
-Swin Transformer V2
-      │
-      ▼
-Hierarchical Feature Extraction
-      │
-      ▼
-Spatial Alignment
-      │
-      ▼
-Adaptive Gated Attention Fusion
-      │
-      ▼
-Classification Head
-      │
-      ▼
-Healthy / Glaucoma / DR
-```
 
 ---
 

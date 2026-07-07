@@ -16,9 +16,7 @@
 
 ## 📖 Overview
 
-Retinal diseases, particularly **Diabetic Retinopathy (DR)** and **Glaucoma**, are among the leading causes of irreversible blindness worldwide. Although Vision Transformers effectively capture long-range contextual information, efficiently integrating hierarchical multi-scale retinal representations remains a significant challenge.
-
-**SwinNetraGF** addresses this limitation through a novel **Adaptive Gated Attention Fusion (GAF)** module that selectively integrates shallow structural information with deep semantic representations extracted by **Swin Transformer V2**, resulting in improved retinal disease classification.
+Retinal diseases, particularly **Diabetic Retinopathy (DR)** and **Glaucoma**, are among the leading causes of irreversible blindness worldwide. Although Vision Transformers effectively capture long-range contextual information, efficiently integrating hierarchical multi-scale retinal representations remains a significant challenge. **SwinNetraGF** addresses this limitation through a novel **Adaptive Gated Attention Fusion (GAF)** module that selectively integrates shallow structural information with deep semantic representations extracted by **Swin Transformer V2**, resulting in improved retinal disease classification.
 
 ---
 

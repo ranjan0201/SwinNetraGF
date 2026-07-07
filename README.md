@@ -4,7 +4,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Conference](https://img.shields.io/badge/IEEE-SPCOM%202026-orange.svg)
 
 **Official PyTorch implementation of SwinNetraGF**
@@ -144,15 +143,3 @@ where
 
 TBD
 
-# 🙏 Acknowledgements
-
-- **IEEE SPCOM 2026**
-- Swin Transformer V2
-- PyTorch
-- Mendeley Eye Disease Image Dataset
-
----
-
-## ⭐ Star this Repository
-
-If you find this repository useful for your research, please consider giving it a ⭐.
